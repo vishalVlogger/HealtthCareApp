@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TreatmentButton">
+
+    <Button
+        android:id="@+id/BacktoCab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:onClick="onBacktoCabClick"
+        android:text="Back"
+        tools:layout_editor_absoluteX="326dp"
+        tools:layout_editor_absoluteY="601dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        />
+
+    <TextView
+        android:id="@+id/MultiText"
+        android:layout_width="320dp"
+        android:layout_height="210dp"
+        android:layout_marginBottom="9dp"
+        android:scrollbars="vertical"
+        android:layout_above="@+id/BacktoCab"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/TextD"
+        android:layout_width="191dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/MultiText"
+        android:layout_alignStart="@+id/MultiText"
+        android:layout_centerVertical="true"
+        android:gravity="left"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bar"
+        android:layout_marginBottom="12dp"
+        android:layout_alignBottom="@+id/TextD"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+
+</RelativeLayout>
+
+
+

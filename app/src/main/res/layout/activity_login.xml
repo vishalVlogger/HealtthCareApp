@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".LoginActivity">
+
+
+    <EditText
+        android:id="@+id/email1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_marginTop="50dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email1"
+        android:layout_marginTop="30dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnsignin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/btnsignin1"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/password1"/>
+
+    <Button
+        android:id="@+id/btnregister2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Registration"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/btnsignin1"
+        />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="445dp"
+        android:layout_height="234dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/we"
+        />
+
+
+</RelativeLayout>

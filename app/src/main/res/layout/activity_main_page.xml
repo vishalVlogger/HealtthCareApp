@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="413dp"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="411dp"
+        android:layout_height="285dp"
+        android:layout_above="@+id/Emergency"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="106dp"
+        app:srcCompat="@drawable/bar"
+        android:padding="20dp"
+        />
+
+    <ImageButton
+        android:id="@+id/Emergency"
+        android:layout_width="158dp"
+        android:layout_height="110dp"
+        android:layout_alignTop="@+id/Disease"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:onClick="onEmergencyClick"
+        app:srcCompat="@drawable/ambu"
+        tools:layout_constraintLeft_creator="1"
+        />
+
+    <ImageButton
+        android:id="@+id/Disease"
+        android:layout_width="171dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginBottom="142dp"
+        android:onClick="onDiseaseClick"
+        app:srcCompat="@drawable/disease" />
+
+    <Button
+        android:id="@+id/bak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:text="back" />
+
+
+</RelativeLayout>
+
+

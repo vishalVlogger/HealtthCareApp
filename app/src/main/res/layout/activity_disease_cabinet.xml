@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiseaseCabinet">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/BackToMain"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="61dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/MediButton"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="19dp"
+            android:onClick="onMedicineClick"
+            app:srcCompat="@drawable/mm" />
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="onSympClick"
+            android:layout_marginLeft="124dp"
+            app:srcCompat="@drawable/reports" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/TreatButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@id/linearlayout"
+        android:layout_alignLeft="@id/linearlayout"
+        android:layout_alignBottom="@id/BackToMain"
+        android:layout_marginStart="141dp"
+        android:layout_marginLeft="141dp"
+        android:layout_marginBottom="-18dp"
+        android:onClick="onTreatmentClick"
+        app:srcCompat="@drawable/treatment" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:id="@+id/BackToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginBottom="21dp"
+        android:layout_toEndOf="@id/TreatButton"
+        android:layout_toRightOf="@id/TreatButton"
+        android:onClick="onBacktoMainClick"
+        android:text="Back" />
+
+    <ImageView
+        android:id="@+id/imageview5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/TreatButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginBottom="134dp"
+        android:foregroundGravity="top"
+        app:srcCompat="@drawable/bar" />
+
+
+</RelativeLayout>
+
+
+

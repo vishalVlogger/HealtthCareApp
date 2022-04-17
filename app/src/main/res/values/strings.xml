@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">loginsqlite</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="confirmpassword">ConfirmPassword</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="btnsignin">Existing user! Go to Signin page</string>
+    <string name="btnsignup">Register</string>
+    <string name="phone_no">Phone No</string>
+    <string name="btnsignin1">Login</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_front_page">FrontPage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="title_activity_disease">DiseaseActivity</string>
+    <string name="title_activity_disease_cabinet">DiseaseCabinet</string>
+    <string name="title_activity_symptoms_button">SymptomsButton</string>
+    <string name="title_activity_medicine_button">MedicineButton</string>
+    <string name="title_activity_treatment_button">TreatmentButton</string>
+    <string name="title_activity_emer">Emer</string>
+</resources>

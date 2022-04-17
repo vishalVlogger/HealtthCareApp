@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiseaseActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/appBarLayout"
+        android:layout_width="597dp"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        tools:layout_editor_absoluteY="1dp"
+        tools:layout_editor_absoluteX="0dp"
+        />
+
+    <EditText
+        android:id="@+id/Disease_name"
+        android:layout_width="154dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="177dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="136dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/Disease_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:text="Enter Disease"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/search_disease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSearchClick"
+        android:text="Search"
+        android:layout_toRightOf="@+id/backDisease"
+        android:layout_toEndOf="@+id/backDisease"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_alignTop="@+id/backDisease"
+        />
+
+
+    <Button
+        android:id="@+id/backDisease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/Disease_name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="81dp"
+        android:onClick="onBackDiseaseClick"
+        android:text="Back"
+        />
+
+    <ImageView
+        android:id="@+id/imageview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bar"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/textview1"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
+
+
+
